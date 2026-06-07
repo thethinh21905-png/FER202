@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import Sidebar from "../HorseOwnerDashboard/components/Sidebar";
 import HorseStats from "./components/HorseStats";
 import HorseTable from "./components/HorseTable";
 
 export default function MyHorse() {
+    const navigate = useNavigate();
+
     return (
         <div style={{ display: "flex" }}>
             <Sidebar />
@@ -34,16 +37,19 @@ export default function MyHorse() {
                             Manage your horses, monitor health status, and register for tournaments.
                         </p>
                     </div>
-                    <button style={{
-                        backgroundColor: "#8B0000",
-                        color: "#fff",
-                        border: "none",
-                        borderRadius: "8px",
-                        padding: "10px 20px",
-                        cursor: "pointer",
-                        fontSize: "14px",
-                        fontWeight: "bold",
-                    }}>
+                    <button
+                        onClick={() => navigate("/register-horse")}
+                        style={{
+                            backgroundColor: "#8B0000",
+                            color: "#fff",
+                            border: "none",
+                            borderRadius: "8px",
+                            padding: "10px 20px",
+                            cursor: "pointer",
+                            fontSize: "14px",
+                            fontWeight: "bold",
+                        }}
+                    >
                         + Add Horse
                     </button>
                 </div>
