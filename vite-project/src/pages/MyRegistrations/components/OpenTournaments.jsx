@@ -2,9 +2,9 @@ import { useState } from "react";
 import RegistrationModal from "./RegistrationModal";
 
 const tournaments = [
-    { name: "Dubai Sprint Cup", date: "Oct 15, 2024", prize: "£2.5M+", img: "/Horse1.jpg" },
-    { name: "Royal Turf Championship", date: "Nov 30, 2024", prize: "£1.5M+", img: "/Horse2.jpg" },
-    { name: "Golden Derby", date: "Dec 05, 2024", prize: "£3.2M+", img: "/Horse1.jpg" },
+    { name: "Dubai Sprint Cup", date: "Oct 15, 2024", prize: "£2.5M+", img: "/DubaiSprintCup.jpg" },
+    { name: "Royal Turf Championship", date: "Nov 30, 2024", prize: "£1.5M+", img: "/RoyalTurfChampionship.jpg" },
+    { name: "Golden Derby", date: "Dec 05, 2024", prize: "£3.2M+", img: "/GoldenDerby.jpg" },
 ];
 
 export default function OpenTournaments() {

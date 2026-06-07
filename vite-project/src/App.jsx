@@ -3,6 +3,8 @@ import HorseOwnerDashboard from "./pages/HorseOwnerDashboard";
 import MyHorse from "./pages/MyHorse";
 import RegisterHorse from "./pages/RegisterHorse";
 import MyRegistrations from "./pages/MyRegistrations";
+import JockeyAssignment from "./pages/JockeyAssignment";
+import Notifications from "./pages/Notifications";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Route path="/my-horse" element={<MyHorse />} />
         <Route path="/register-horse" element={<RegisterHorse />} />
         <Route path="/registrations" element={<MyRegistrations />} />
+        <Route path="/jockey" element={<JockeyAssignment />} />
+        <Route path="/notifications" element={<Notifications />} />
       </Routes>
     </BrowserRouter>
   );
